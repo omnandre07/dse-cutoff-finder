@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="DSE Maharashtra cutoff finder — search by %, category, branch and district across AY 2022–23, 2024–25 & 2025–26.">
 <title>DSE Cutoff Finder · Maharashtra 2022–2026</title>
+  <meta name="msvalidate.01" content="B4DA9CD2D077528D6224DCE77CF19480" />
+  <meta name="google-site-verification" content="REz1ero5z0fWq5DKuZbhI3dnUjrkBJeSqG9Yf5V1Bd4" />
 <meta name="keywords" content="DSE Maharashtra, cutoff 2025-26, direct second year engineering, diploma admission, CAP round cutoff">
 <meta property="og:title" content="DSE Cutoff Finder · Maharashtra 2022–2026">
 <meta property="og:description" content="Find DSE college by diploma %, category and district. 404 colleges, 3 years of CAP data, closing ranks included.">
@@ -354,11 +356,13 @@ kbd{font-family:inherit;background:var(--surf3);border:1px solid var(--bdr2);bor
   letter-spacing:.01em;
   border-bottom:2px solid rgba(255,255,255,.12);
   -webkit-tap-highlight-color:transparent;
-  position:sticky;top:0;z-index:199;
+  
   transition:background .15s;
 }
 
 @media(max-width:819px){
+
+  .search-layout{display:block!important}
 
   /* HEADER */
   header{padding:1.75rem 1rem 1.5rem}
@@ -585,17 +589,16 @@ kbd{font-family:inherit;background:var(--surf3);border:1px solid var(--bdr2);bor
   </div>
 </nav>
 <!-- Mobile search bar — sits right below nav tabs -->
-<div class="mob-search-bar" id="mob-fab" onclick="openSidebar()">
+<button class="mob-search-bar" id="mob-fab" onclick="openSidebar()">
   <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
   <span id="mob-fab-label">Tap here to Search Colleges</span>
   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="opacity:.7;flex-shrink:0"><polyline points="18 15 12 9 6 15"/></svg>
-</div>
+</button>
 <div class="wrap">
 
 <!-- SEARCH TAB -->
 <div class="tab-section on" id="tab-search">
 <div class="search-layout">
-  <div class="sidebar-overlay" id="sidebar-overlay" onclick="closeSidebar()"></div>
   <div class="sidebar">
     <div class="panel">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem">
@@ -1042,6 +1045,7 @@ kbd{font-family:inherit;background:var(--surf3);border:1px solid var(--bdr2);bor
 </footer>
 
 <footer class="print-footer-only" style="display:none">DSE Cutoff Finder · Om Vinod Nandre · Data: cetcell.mahacet.org · For reference only</footer>
+<div class="sidebar-overlay" id="sidebar-overlay" onclick="closeSidebar()"></div>
 <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
 
 <script>
